@@ -1,0 +1,25 @@
+.icon-gridms {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Nine columns in a repeating pattern */
+    gap: 1px; /* Small spacing between items */
+    padding-top: 50px;
+}
+
+.icon-gridms div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px; /* Ensures consistent cell height */
+}
+
+.icon-gridms img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Icons fit within their cells */
+}
+
+/* Make "o" (empty cells) smaller */
+.emptyms {
+    grid-column: span 0.5; /* Half the width of a normal column */
+    height: 80px; /* Optional: Smaller height for empty cells if desired */
+}
